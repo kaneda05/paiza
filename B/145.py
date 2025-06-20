@@ -1,16 +1,15 @@
-# 入力の読み込み
 N, K = map(int,input().split())
 
-# ビンゴカードの読み込み
+
 board = []
 for _ in range(N):
     row = list(map(int, input().split()))
     board.append(row)
 
-# 抽選された数字の読み込み
+
 drawn_numbers = list(map(int, input().split()))
 
-# 抽選された数字＋中央の0を「開いた数字」として記録
+
 opened = [[False for _ in range(N)] for _ in range(N)]
 
 for i in range(N):
@@ -18,7 +17,7 @@ for i in range(N):
         if board[i][j] == 0 or board[i][j] in drawn_numbers:
             opened[i][j] = True
 
-# ビンゴの数を数える
+
 bingo_count = 0
 
 # 横のビンゴチェック（行）
@@ -59,5 +58,5 @@ for i in range(N):
 if all_opened:
     bingo_count += 1
 
-# 結果を出力
+
 print(bingo_count)
