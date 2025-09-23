@@ -7,7 +7,7 @@ using namespace std;
 int main(){
     int N, K;
     cin >> N >> K;
-    vector<vector<int> p(N, vector<int>(K));
+    vector<vector<int>> p(N, vector<int>(K));
 
     for (int i = 0; i < N; i++){
         for (int j = 0; j < K; j++){
@@ -20,11 +20,11 @@ int main(){
         int min_shop = -1;
         for (int n = 0; n < N; n++){
             if (p[n][k] < min_pnk){
-                min_pnk = p[n][k]
+                min_pnk = p[n][k];
                 min_shop = n;
             }
         }
-    shop_number.add(min_shop);
+    shop_number.insert(min_shop);
     }
     
     cout << shop_number.size() << endl;
