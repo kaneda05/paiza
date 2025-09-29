@@ -1,2 +1,4 @@
-n, m = gets.split.map(&:to_i)
+n = gets.to_i
+m = gets.to_i
+
 puts n + m
