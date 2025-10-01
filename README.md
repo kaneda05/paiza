@@ -9,3 +9,4 @@
 |日付|解いた問題数|
 |:--:|:--:|
 |[2025年9月](https://github.com/kaneda05/paiza/blob/main/README/25y09m.md)|xx|
+|[2025年10月](https://github.com/kaneda05/paiza/blob/main/README/25y10m.md)|xx|
