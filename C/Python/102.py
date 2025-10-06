@@ -3,7 +3,7 @@ A = [int(input()) for _ in range(M)]
 N = int(input())
 B = [int(input()) for _ in range(N)]
 
-date = ["x"*32]
+date = ["x"]*32
 flag = True
 for i in range(1,len(date)):
     if i in A and i in B:
